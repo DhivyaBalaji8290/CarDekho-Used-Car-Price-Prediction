@@ -1,100 +1,53 @@
 # CarDekho-Used-Car-Price-Prediction
-Car Dekho Price Prediction
-Table of contents
+he primary objective of is project is to create a data science solution for predicting used car prices accurately by analyzing a diverse dataset including car model, no. of owners, age, mileage, fuel type, kilometers driven, features and location. The aim is to build a machine learning model that offers users to find current valuations for used cars.
 
-    Objective
-    Quick Demo
-    Dataset Prview
-    Description of variables in the dataset
-    Car Price Prediction directory tree
-    Installation
-    Technologies Used
+Data Understanding
 
-Objective
+The Dataset contains multiple excel files, each represents its city, columns in each excel gives you an overview of each car, its details, specification and available features.
 
-In this project, the objective is to predict Car Selling Price on various features like Car's Present_Price, Kms_Driven, Owner, Fuel_Type, Seller_Type, Transmission. We will use the CAR DEKHO dataset from Kaggle. This dataset contains information about used cars listed on website
-Quick Demo
+Data Collected From: CarDekho
+Dataset Link: Dataset
+Feature Description Link: Features
 
-demo_gif
+Approach:
+Import data from all excel files
+Examine the structure of each dataset component (New Car Detail, New Car Overview, etc.).
+Check for missing values, outliers, data types and other statistical inference.
+ Data Preprocessing:
+Handle Missing Values: Impute or remove missing values appropriately.
+Feature Engineering: Extract relevant information from features like age, mileage, and others.
+Encode categorical variables using suitable techniques.
+Normalization/Scaling: Scale numerical features to bring them to a comparable range.
+Exploratory Data Analysis: Create visualizations to understand the distribution of target variables (used car prices) and relationships between features.
+Choose regression models suitable for predicting continuous values
+Model Evaluation: Use suitable metrics 
+Fine-tune Hyperparameters: Optimize model hyperparameters to improve performance.
+Feature Importance: Analyze feature importance to understand which features contribute most to the predictions.
 
+Submission:
 
-We can predict Car Selling Price by filling the data over UI and after that prediction will be displayed over UI.
-
-Dataset Prview
-A preview of top five rows of the Car Dekho dataset.
-	Car_Name 	Year 	Selling_Price 	Present_Price 	Kms_Driven 	Fuel_Type 	Seller_Type 	Transmission 	Owner
-0 	ritz 	2014 	3.35 	5.59 	27000 	Petrol 	Dealer 	Manual 	0
-1 	sx4 	2013 	4.75 	9.54 	43000 	Diesel 	Dealer 	Manual 	0
-2 	ciaz 	2017 	7.25 	9.85 	6900 	Petrol 	Dealer 	Manual 	0
-3 	wagon r 	2011 	2.85 	4.15 	5200 	Petrol 	Dealer 	Manual 	0
-4 	swift 	2014 	4.60 	6.87 	42450 	Diesel 	Dealer 	Manual 	0
-Description of variables in the dataset
-Above dataset contains information about used cars listed on website. This data can be used for a lot of purposes such as car price prediction using Machine Learning algorithms. The columns in the given dataset are as follows:
-
-Car_Name: Name of Car sold
-
-Year: Year in which car was bought
-
-Selling_Price: Price at which car sold
-
-Present_Price: Price of same car model in current year
-
-Kms_Driven: Number of Kilometers Car driven before it is sold
-
-Fuel_Type: Type of fuel Car uses
-
-Seller_Type: Type of seller
-
-Transmission: Gear transmission of the car (Automatic / Manual)
-
-Owner: Number of previous owners
-Car Price Prediction directory tree
-
-├─ Templates
-│  └─ index.html
-│
-├─ app.py
-│
-├─ demo.gif
-│
-├─ rf_regression_model.pkl
-│  
-├─ Car Dekho Price Prediction.ipynb
-│
-├─ LICENSE
-│  
-├─ car data.csv
-│
-├─ Procfile
-│
-├─ README.md 
-│
-└─ requirements.txt
-    
-
-Templates : contains templates for UI
-
-app.py : Front and back end portion of the web application
-
-Car Dekho Price Prediction.ipynb : conatains ipynb file (Jypiter Notebook file)
-
-rf_regression_model.pkl : contains model for prediction
-
-requirements.txt : required libraries
-Installation
-
-    Clone this repository and unzip it.
-
-    create new env with python 3 and activate it .
-
-    Install the required packages using pip install -r requirements.txt
-
-    Execute the command: python app.py
-
-    Open http://127.0.0.1:5000/ in your browser.
-
-Technologies Used
+Provide a well-commented Python file (*.py) containing the complete code for the project, organized into sections for data preprocessing, model training, and evaluation.
+Document the entire project, including data sources, preprocessing steps, model selection and evaluation metric.
 
 
 
-car data.csv : conatins raw data as csv file
+Note: 
+After completion of all the task you need to create a PowerPoint presentation that should contain the: 
+1. Problem Statement
+2. Tools Used
+3. Approaches
+4. EDA Insights
+5. Model Selection
+6. Model Performance
+
+Project Evaluation metrics:
+Project evaluation will be done in the live session and have to showcase the approaches done to complete the project
+You are supposed to write a code in a modular fashion (in functional blocks)
+Maintainable: It can be maintained, even as your codebase grows.
+Portable: It works the same in every environment (operating system)
+You have to maintain your code on GitHub.(Mandatory) 
+You have to keep your GitHub repo public so that anyone can check yourcode.(Mandatory)
+Proper readme file you have to maintain for any project development(Mandatory) 
+Follow the coding standards: https://www.python.org/dev/peps/pep-0008/
+You should include basic workflow and execution of the entire project in the readme file on GitHub
+
